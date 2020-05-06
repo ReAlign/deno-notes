@@ -1,0 +1,24 @@
+{
+  "name": "deno-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReAlign/deno-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReAlign/deno-notes/issues"
+  },
+  "homepage": "https://github.com/ReAlign/deno-notes#readme",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^2.2.0",
+    "markdown-it-copy": "^1.2.0",
+    "vuepress": "^1.4.1"
+  }
+}
