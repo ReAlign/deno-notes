@@ -1,0 +1,69 @@
+const URL = {
+    css: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css',
+    js: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
+};
+const GitalkX = {
+    integrateGitalk(router) {
+        const linkGitalk = document.createElement('link');
+        linkGitalk.href = URL.css;
+        linkGitalk.rel = 'stylesheet';
+        document.head.appendChild(linkGitalk);
+
+        const scriptGitalk = document.createElement('script');
+        scriptGitalk.src = URL.js;
+        document.body.appendChild(scriptGitalk);
+
+        router.afterEach((to) => {
+            debugger
+            if (scriptGitalk.onload) {
+                loadGitalk(to);
+            } else {
+                scriptGitalk.onload = () => {
+                    loadGitalk(to);
+                }
+            }
+        });
+
+        function loadGitalk(to) {
+            let commentsContainer = document.getElementById('gitalk-container');
+            if (!commentsContainer) {
+                commentsContainer = document.createElement('div');
+                commentsContainer.id = 'gitalk-container';
+                commentsContainer.classList.add('content');
+            }
+            const $page = document.querySelector('.page');
+            if ($page) {
+                $page.appendChild(commentsContainer);
+                if (typeof Gitalk !== 'undefined' && Gitalk instanceof Function) {
+                    renderGitalk(to.fullPath);
+                }
+            }
+        }
+
+        function renderGitalk(fullPath) {
+            const gitalk = new Gitalk({
+                clientID: '459f926aedb4c0cbdea4',
+                clientSecret: '937f6b4842bd5d7dc767b48cd78f7db27bf88d57', // come from github development
+                repo: 'deno-notes',
+                owner: 'realign',
+                admin: ['realign'],
+                id: fullPath,
+                distractionFreeMode: false,
+                language: 'zh-CN',
+            });
+            gitalk.render('gitalk-container');
+        }
+    }
+};
+
+export default ({
+    // Vue,
+    // options,
+    router
+}) => {
+    try {
+        document && GitalkX.integrateGitalk(router);
+    } catch (e) {
+        console.error(e.message);
+    }
+}

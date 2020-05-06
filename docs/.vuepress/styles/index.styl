@@ -1,9 +1,22 @@
 @import "./mic.styl";
 
+/*
+.nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif!important;
+    font-weight: 400!important;
+}
+*/
+
 div[class^="language-"]:before {
     content: ''!important;
 }
 
 .content-wrapper {
-    padding: 160px 15px 78px 15px!important;
+    // 78 + 62<footer>
+    padding: 160px 15px 140px 15px!important;
+}
+
+.vuepress-toc {
+    padding-top: 6rem!important;
+    right: 36px;
 }
