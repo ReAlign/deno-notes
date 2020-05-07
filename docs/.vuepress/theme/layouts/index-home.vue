@@ -1,7 +1,8 @@
 <template>
   <div class="m-home">
-    <div class="u-home-text">
-      Deno Notes
+    <div class="m-home-text">
+      <img src="/img/deno_logo_3.svg" alt="">
+      <span>Deno Notes</span>
     </div>
     <!-- <div class="u-home-links">
       <a href="/posts/">Tutorial →</a>
@@ -25,13 +26,21 @@ export default {
   top: $headerHeight;
   bottom: 0;
 }
-.u-home-text {
+.m-home-text {
   position: absolute;
   top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-size: 64px;
+  text-align: center;
+  & > img {
+    width: 160px;
+  }
+  & > span {
+    display: block;
+    font-size: 72px;
+    font-family: PT Serif, Serif;
+  }
   /*font-weight: lighter;*/
 }
 /*

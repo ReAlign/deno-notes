@@ -1,0 +1,17 @@
+$scroll-bar-size = 8px;
+
+half(x)
+  x / 2
+
+html, body
+  // font-family: PT Serif, Serif;
+  ::-webkit-scrollbar
+    width $scroll-bar-size
+    height $scroll-bar-size
+
+  ::-webkit-scrollbar-thumb
+    background $vp-scrollbar-color
+    border-radius half($scroll-bar-size)
+
+  ::-webkit-scrollbar-track
+    background rgba(0, 0, 0, 0)

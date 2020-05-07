@@ -1,4 +1,3 @@
-
 const DC = require('./data-conf.js');
 
 console.log(DC.vssue());
@@ -47,7 +46,7 @@ module.exports = {
                 link: 'https://github.com/ReAlign',
             }],
             copyright: [{
-                    text: '© 2019 Realign 版权所有',
+                    text: '© 2020 Realign',
                     link: 'https://github.com/ReAlign',
                 },
                 {
@@ -68,19 +67,19 @@ module.exports = {
         //     clientSecret: '',
         // },
 
-        // newsletter: {
-        //     title: '邮件订阅',
-        //     content: '请输入您的邮箱...',
-        //     submitText: '订阅',
-        //     endpoint: 'https://forapi.us19.list-manage.com/subscribe/post?u=ac82b3046426d14cad8f2a3ef&amp;id=ebfc431c44'
-        // },
+        newsletter: {
+            title: '邮件订阅',
+            content: '请输入您的邮箱...',
+            submitText: '订阅',
+            endpoint: 'https://gmail.us18.list-manage.com/subscribe/post?u=bc92e937db8987813e606bcbf&amp;id=98b0931715'
+        },
 
         sitemap: {
-            hostname: 'http://deno-notes.realign.pro',
+            hostname: 'https://deno-notes.realign.pro',
         },
 
         feed: {
-            canonical_base: 'http://deno-notes.realign.pro',
+            canonical_base: 'https://deno-notes.realign.pro',
         },
 
         smoothScroll: true
