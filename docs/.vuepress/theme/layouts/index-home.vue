@@ -35,6 +35,7 @@ export default {
   text-align: center;
   & > img {
     width: 160px;
+    height: 160px;
   }
   & > span {
     display: block;

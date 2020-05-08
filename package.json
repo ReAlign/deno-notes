@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vuepress dev docs"
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "build:prod": "npm i && npm run build",
+    "serve": "serve -l 6666 ./docs/.vuepress/dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "@vssue/vuepress-plugin-vssue": "^1.4.4",
     "@vuepress/theme-blog": "^2.2.0",
     "markdown-it-copy": "^1.2.0",
+    "serve": "^11.3.0",
     "vuepress": "^1.4.1"
   }
 }

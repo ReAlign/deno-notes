@@ -1,5 +1,7 @@
-$posAbs = 16px
+// $posAbs = 16px
+$posAbs = 0
 $font-color = #eee
+$code-bg-color = #282c34
 
 normal-font-style()
   font-family system-ui
@@ -18,8 +20,12 @@ normal-style()
   normal-font-style()
   outline none
 
+div[class^='language-']
+  &.extra-class
+    position relative
+
 pre
-  position relative
+  position unset!important
 
 .m-mdic-copy-wrapper
   position absolute
@@ -34,6 +40,7 @@ pre
     display none
     position absolute
     normal-style()
+    background-color $code-bg-color
     opacity 1
     right 100%
     padding-right 4px
