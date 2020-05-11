@@ -9,6 +9,7 @@ module.exports = {
     lange: 'zh-CN',
     theme: require.resolve('./theme/'),
     markdown: {
+        lineNumbers: true,
         plugins: [
             // https://github.com/ReAlign/markdown-it-copy
             ['markdown-it-copy', {

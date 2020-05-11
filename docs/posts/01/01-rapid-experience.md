@@ -3,7 +3,7 @@ title: 快速体验
 lang: zh-CN
 meta:
   - name: 快速体验 deno
-    content: 。。。
+    content: REPL 如果你使用过 `ruby`、`python`、`node` 等语言，一定对 `REPL` 很熟悉。什么是REPL
   - name: keywords
     content: deno deno-notes notes experience
 tags:
@@ -11,7 +11,7 @@ tags:
 date: 2020-05-10
 author: ReAlign
 location: hangzhou
-summary: 。。。
+summary: REPL 如果你使用过 `ruby`、`python`、`node` 等语言，一定对 `REPL` 很熟悉。什么是REPL
 ---
 
 ## REPL

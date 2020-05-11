@@ -3,7 +3,7 @@ title: 安装
 lang: zh-CN
 meta:
   - name: deno 安装教程
-    content: 。。。
+    content: 关于安装，[Deno官网](https://deno.land/) 已经说得很详细了。踩坑之谈 使官网上的方式，可能会遇到一些问题：
   - name: keywords
     content: deno deno-notes notes install
 tags:
@@ -11,7 +11,7 @@ tags:
 date: 2020-05-09
 author: ReAlign
 location: hangzhou
-summary: 。。。
+summary: 关于安装，[Deno官网](https://deno.land/) 已经说得很详细了。踩坑之谈 使官网上的方式，可能会遇到一些问题：
 ---
 
 ## 如何安装
