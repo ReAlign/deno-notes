@@ -134,7 +134,11 @@ deno eval "console.log('This year is: ' + new Date().getFullYear());"
 This year is: 2020
 ```
 
-> Tips: 截止 `deno 1.0.0-rc1` 版本，`deno` 还不支持 `es6` 模板字符串。
+> Tips: 截止 `deno 1.0.0-rc2` 版本，`deno eval` 中还不支持 `es6` 模板字符串。
+>
+> deno eval "console.log(\`This year is: ${new Date().getFullYear()}\`);"
+>
+> 上面这种方式，会报错：`zsh: bad substitution`
 
 [未完待续。。。]
 
